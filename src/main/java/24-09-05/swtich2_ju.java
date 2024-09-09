@@ -67,6 +67,9 @@ public class swtich2_ju {
             case 12 :
                 System.out.println("입력하신 " + dal + " 월은 겨울 입니다");
                 break;
+
+            default:
+                System.out.println("해당하는 달이 존재하지 않습니다.");
         }
 
     }
