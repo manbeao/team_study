@@ -14,8 +14,19 @@ public class array_ju {
              */
 
             Scanner sc = new Scanner(System.in);
-            System.out.println("첫번째 정수를 입력하세요 : ");
-            int
+            System.out.print("첫번째 정수를 입력하세요 : ");
+            int num1 = sc.nextInt();
+            System.out.print("두번째 정수를 입력하세요 : ");
+            int num2 = sc.nextInt();
+            System.out.print("세번째 정수를 입력하세요 : ");
+            int num3 = sc.nextInt();
+
+            int[] arr1={num1,num2,num3};
+            int sum =0;
+            for (int i=0; i<arr1.length; i++){
+                sum = arr1[i];
+            }
+            System.out.println("NumArr의 배열은  : {" + arr1[0] + " " +arr1[1]+ " " +arr1[2]+ " } ");
         }
 
     }

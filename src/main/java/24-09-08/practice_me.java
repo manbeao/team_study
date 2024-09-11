@@ -20,22 +20,25 @@ public class practice_me {
         double num = sc.nextDouble();
         int sum =0;
         int cnt =0;
+        int cun=0;
         int num1 = (int) num;
 
         if (num1 % 2 == 0) {
 
             for (int i = 1; i <= num1; i++) {
-                sum++;
+                sum+=i;
                 cnt+=i;
+                cun++;
         }
-            System.out.println("1부터 " + num1 + "까지의 합인 "+ sum +" 에 " + num1+"까지의 " +num1+" 의 홀수의 개수에 " + sum + " 을 곱하면 " + (cnt*sum)+ "입니다");
+            System.out.println("1부터 " + num1 + "까지의 합인 "+ sum +" 에 " + num1+"까지의 " +num1+" 의 홀수의 개수인 " + cun/2 + " 을 곱하면 " + ((cun/2)*sum)+ "입니다");
 
         }else if(num1%2!=0) {
             for (int i = 1; i <= num1; i++) {
-                sum++;
+                sum+=i;
                 cnt+=i;
+                cun++;
 
-            }System.out.println("1부터 " + num1 + "까지의 합인 "+ sum +" 에 "  +num1+" 의 짝수의 개수에 " + sum + "을 곱하면 " + (cnt*num1)+ "입니다");
+            }System.out.println("1부터 " + num1 + "까지의 합인 "+ sum +" 에 "  +num1+" 의 짝수의 개수인 " + cun/2 + "을 곱하면 " + (cun/2*sum)+ "입니다");
         }
         }
     }
